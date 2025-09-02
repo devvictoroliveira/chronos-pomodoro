@@ -4,10 +4,13 @@ import { Logo } from "./Components/logo";
 import { Menu } from "./Components/Menu";
 import { CountDown } from "./Components/CountDown";
 import { DefaultInput } from "./Components/defaultinput";
+import { PlayCircleIcon } from "lucide-react";
+import { DefaultButton } from "./Components/defaultButton";
+import { Cycles } from "./Components/cycles";
+import { Footer } from "./Components/footer";
 
 import "./style/themer.css";
 import "./style/global.css";
-import { Cycles } from "./Components/cycles";
 
 export function App() {
   return (
@@ -45,9 +48,12 @@ export function App() {
           </div>
 
           <div className="formRow">
-            <button>clicar</button>
+            <DefaultButton icons={<PlayCircleIcon />} color="" />
           </div>
         </form>
+      </Container>
+      <Container>
+        <Footer />
       </Container>
     </>
   );
